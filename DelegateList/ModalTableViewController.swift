@@ -13,7 +13,12 @@ class ModalTableViewController: UITableViewController, AddItemDelegate {
     
 
     @IBAction func addTapped(_ sender: UIBarButtonItem) {
-        performSegue(withIdentifier: "showAddScreen", sender: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        
+        vc.delegate = self
+        present(vc, animated: true)
+        //performSegue(withIdentifier: "showAddScreen", sender: nil)
     }
     
     var items = ["text", "fjkflf", "ogdilya", "adsfsgah"]

@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DelegateList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="DelegateList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,7 +91,6 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="uBQ-SP-JGp">
                             <connections>
                                 <action selector="addTapped:" destination="ZDw-7I-mFj" id="Miq-h7-1PT"/>
-                                <segue destination="BYZ-38-t0r" kind="show" identifier="showAddScreen" id="DcM-kc-iZi"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

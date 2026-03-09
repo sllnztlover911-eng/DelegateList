@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     @IBAction func addButtonv(_ sender: Any) {
         if let text = addTextField.text {
             delegate?.didAddItem(text)
-            navigationController?.popViewController(animated: true)
+            dismiss(animated: true)
         }
     }
     
